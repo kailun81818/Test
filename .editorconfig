@@ -1,0 +1,28 @@
+root = true
+
+# 所有檔案的基本設定
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# C# 檔案特別設定
+[*.cs]
+
+# Unity 特殊檔案
+[*.{unity,prefab,mat,asset,meta}]
+indent_size = 2
+
+# JSON 檔案
+[*.json]
+indent_size = 2
+
+# Shader 檔案
+[*.{shader,hlsl,cginc}]
+
+# Markdown 檔案保留尾隨空白（對格式有影響）
+[*.md]
+trim_trailing_whitespace = false
